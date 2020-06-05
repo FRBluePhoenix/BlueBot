@@ -7,7 +7,7 @@ const fs = require("fs")
 client.commands = new Discord.Collection()
 let prefix = config.prefix;
 
-var nombreAleatoire = Math.round(Math.random()*2);
+
 
  
 client.login(config.token);
