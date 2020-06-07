@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require("fs");
-const {TOKEN,PREFIX} = require("./config.js");  //A TESTER const {TOKEN,PREFIX} = require("/bluebot/config")
+const {TOKEN,PREFIX} = require("./config.js");
 
 client.commands = new Discord.Collection()
 
