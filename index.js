@@ -1,8 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require("fs");
-const config = require("./config.js");
-
+const config = require("./config.js");  //A TESTER const config = require("/bluebot/config")
 
 client.commands = new Discord.Collection()
 let PREFIX = config.prefix
@@ -42,7 +41,6 @@ client.on('message', message => {
     client.commands.get(command).run(client, message, args);
   });
 
-
 /* if(message.content === prefix + "ping") { 
         message.channel.send("Pong")
     }
@@ -59,8 +57,6 @@ client.on('message', message => {
             message.channel.send("Je ne suis pas sur de comprendre, êtes-vous sure de la commande?",)
         }
     }
-
-
 
     if(message.content === prefix + "Deconnection") { //commande deconnexion
         message.channel.send("**Déconnection en cours**")
