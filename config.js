@@ -1,2 +1,2 @@
-exports.token = "TOKEN"
-exports.prefix = "B!"
+exports.TOKEN = "TOKEN"
+exports.PREFIX = "B!"
