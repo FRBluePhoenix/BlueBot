@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require("fs");
-const config = require("./config.js");  //A TESTER const config = require("/bluebot/config")
+const {TOKEN,PREFIX} = require("./config.js");  //A TESTER const config = require("/bluebot/config")
 
 client.commands = new Discord.Collection()
-let PREFIX = config.prefix
+
 
 var nombreAleatoire = Math.round(Math.random()*2);
  
-client.login(config.token);
+client.login(TOKEN);
  
 client.on("ready", () => {
     console.log("connecté !")
